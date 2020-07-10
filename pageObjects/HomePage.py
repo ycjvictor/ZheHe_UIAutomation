@@ -6,7 +6,7 @@ from util.Log import *
 
 class HomePage:
 
-    def __init__(self,driver):
+    def __init__(self, driver):
         self.driver = driver
         self.parseCF = ParseConfigFile()
         self.homeOptions = self.parseCF.getItemsSection('home')
@@ -16,7 +16,7 @@ class HomePage:
     # homePage.loginEntryButton = xpath > // label[contains(text(), "点击登录")]
     def ExitButtonObj(self):
         try:
-            locateType, locateExpression = self.homeOptions['homePage.exitButton'.lower()].split('>')
+            locateType, locateExpression = self.homeOptions['homePage.exitButton'.lower()].split(' > ')
             element = getElement(self.driver, locateType, locateExpression)
         except Exception as e:
             logger.error(e)
@@ -78,8 +78,9 @@ if __name__=="__main__":
     # homePage.ExitButtonObj().click()
 
     #测试登陆入口按钮
-    browser.get('http://test-jdread.jd.com/h5/m/p_my_details')
-    homePage=homePage(browser)
+    # browser.get('http://test-jdread.jd.com/h5/m/p_my_details')
+    browser.get('http://47.96.183.143/#/oa/home')
+    homePage = HomePage(browser)
     homePage.LoginEntryButton().click()
     # time.sleep(2)
     # bookCityPage.toolButtonObj().click()

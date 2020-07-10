@@ -2,16 +2,16 @@ from util.ObjectMap import *
 from util.ParseConfigurationFile import ParseConfigFile
 from util.Log import *
 
-class LoginPage:
+class %{class_name}:
 
     #获取loginPage页的所有元素
     def __init__(self, driver):
         self.driver = driver
         self.parseCF = ParseConfigFile()
-        self.loginOptions = self.parseCF.getItemsSection('login')
+        self.loginOptions = self.parseCF.getItemsSection({page_name})
 
 
-    def userNameObj(self):
+    def get+{}(self):
         try:
             locateType, locateExpression = self.loginOptions['loginPage.username'.lower()].split('>')
             element = getElement(self.driver, locateType, locateExpression)
@@ -21,27 +21,6 @@ class LoginPage:
             logger.info("找到元素"+locateExpression)
             return element
 
-
-    def passwordObj(self):
-        try:
-            locateType, locateExpression = self.loginOptions['loginPage.password'.lower()].split('>')
-            element = getElement(self.driver, locateType, locateExpression)
-        except Exception as e:
-            logger.error(e)
-        else:
-            logger.info("找到元素" + locateExpression)
-            return element
-
-
-    def loginButton(self):
-        try:
-            locateType, locateExpression = self.loginOptions['loginPage.loginButton'.lower()].split('>')
-            element = getElement(self.driver, locateType, locateExpression)
-        except Exception as e:
-            logger.error(e)
-        else:
-            logger.info("找到元素" + locateExpression)
-            return element
 
 
 

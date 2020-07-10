@@ -2,7 +2,7 @@
 
 url = 'http://47.96.183.143/#/'
 
-oa_home = url+'oa/home'
+loginpage = url+'login'
 
 homepage = url+'oa/home'
 

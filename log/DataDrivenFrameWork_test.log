@@ -739,3 +739,28 @@ from unknown error: web view not found
 2020-07-08-09:41:10 HomePage.py[line:44] INFO 找到元素//*[@id="app"]/div/div[1]/div[3]/div/div/span
 2020-07-08-09:41:10 testLogin.py[line:55] INFO 在首页页面找【退出】按钮
 2020-07-08-09:41:10 testLogin.py[line:64] INFO 在"我的"页面找到【退出】按钮，成功,用例通过
+2020-07-10-15:36:58 testLogin.py[line:30] INFO 开始执行登录脚本...
+2020-07-10-15:36:58 testLogin.py[line:38] INFO 执行测试数据：yinchengjie,123456
+2020-07-10-15:37:05 testLogin.py[line:44] INFO 启动浏览器，访问首页页面...
+2020-07-10-15:37:05 HomePage.py[line:54] ERROR not enough values to unpack (expected 2, got 1)
+2020-07-10-15:37:05 testLogin.py[line:79] ERROR 'NoneType' object has no attribute 'click'
+2020-07-10-15:37:57 testLogin.py[line:30] INFO 开始执行登录脚本...
+2020-07-10-15:37:57 testLogin.py[line:38] INFO 执行测试数据：yinchengjie,123456
+2020-07-10-15:38:04 testLogin.py[line:44] INFO 启动浏览器，访问首页页面...
+2020-07-10-15:38:04 HomePage.py[line:54] ERROR not enough values to unpack (expected 2, got 1)
+2020-07-10-15:38:04 testLogin.py[line:79] ERROR 'NoneType' object has no attribute 'click'
+2020-07-10-15:46:58 HomePage.py[line:54] ERROR not enough values to unpack (expected 2, got 1)
+2020-07-10-15:54:08 HomePage.py[line:56] INFO 找到元素//*[@id="app"]//button
+2020-07-10-15:54:25 testLogin.py[line:30] INFO 开始执行登录脚本...
+2020-07-10-15:54:25 testLogin.py[line:38] INFO 执行测试数据：yinchengjie,123456
+2020-07-10-15:54:31 testLogin.py[line:44] INFO 启动浏览器，访问首页页面...
+2020-07-10-15:54:31 HomePage.py[line:56] INFO 找到元素//*[@id="app"]//button
+2020-07-10-15:54:31 testLogin.py[line:48] INFO 点击首页页面的登录按钮...
+2020-07-10-15:54:31 LoginPage.py[line:21] INFO 找到元素//*[@id="account"]
+2020-07-10-15:54:31 LoginPage.py[line:32] INFO 找到元素//*[@id="password"]
+2020-07-10-15:54:32 LoginPage.py[line:43] INFO 找到元素//*[@id="app"]//button
+2020-07-10-15:54:33 LoginAction.py[line:38] INFO 登录成功！
+2020-07-10-15:54:33 testLogin.py[line:50] INFO 登录操作执行...
+2020-07-10-15:54:33 HomePage.py[line:44] INFO 找到元素//*[@id="app"]/div/div[1]/div[3]/div/div/span
+2020-07-10-15:54:33 testLogin.py[line:56] INFO 在首页页面找【退出】按钮
+2020-07-10-15:54:33 testLogin.py[line:65] INFO 在"我的"页面找到【退出】按钮，成功,用例通过

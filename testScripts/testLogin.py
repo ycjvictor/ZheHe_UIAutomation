@@ -42,6 +42,7 @@ class TestLogin(unittest.TestCase):
                     browser.maximize_window()
                     browser.get(homepage)
                     logger.info('启动浏览器，访问首页页面...')
+                    
                     homePage = HomePage(browser)
                     homePage.LoginEntryButton().click()
                     logger.info('点击首页页面的登录按钮...')

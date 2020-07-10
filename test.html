@@ -189,8 +189,8 @@ function showOutput(id, name) {
  
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2020-07-07 17:59:20</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00</p>
+<p class='attribute'><strong>Start Time:</strong> 2020-07-10 15:36:58</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:06.856964</p>
 <p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>衢州园林UI自动化测试报告</p>
@@ -222,7 +222,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='errorClass'>
-    <td>unittest.loader._FailedTest</td>
+    <td>testLogin.TestLogin</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
@@ -231,7 +231,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>testLogin</div></td>
+    <td class='errorCase'><div class='testcase'>test_Login</div></td>
     <td colspan='5' align='center'>
  
     <!--css div popup start-->
@@ -245,54 +245,18 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-ft1.1: ImportError: Failed to import test module: testLogin
+ft1.1: Traceback (most recent call last):
+  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\testScripts\testLogin.py", line 81, in test_Login
+    raise e
+  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\testScripts\testLogin.py", line 47, in test_Login
+    homePage.LoginEntryButton().click()
+AttributeError: 'NoneType' object has no attribute 'click'
 Traceback (most recent call last):
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\testScripts\testLogin.py", line 7, in &lt;module&gt;
-    from Modules.LoginAction import LoginAction
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\Modules\LoginAction.py", line 2, in &lt;module&gt;
-    from pageObjects.LoginPage import LoginPage
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\pageObjects\LoginPage.py", line 3, in &lt;module&gt;
-    from util.Log import *
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\util\Log.py", line 9, in &lt;module&gt;
-    logging.config.fileConfig(logpath)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\config.py", line 79, in fileConfig
-    handlers = _install_handlers(cp, formatters)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\config.py", line 145, in _install_handlers
-    h = klass(*args, **kwargs)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1041, in __init__
-    StreamHandler.__init__(self, self._open())
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1070, in _open
-    return open(self.baseFilename, self.mode, encoding=self.encoding)
-ValueError: invalid mode: 'utf-8'
-
-ImportError: Failed to import test module: testLogin
-Traceback (most recent call last):
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 434, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\unittest\loader.py", line 375, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\testScripts\testLogin.py", line 7, in &lt;module&gt;
-    from Modules.LoginAction import LoginAction
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\Modules\LoginAction.py", line 2, in &lt;module&gt;
-    from pageObjects.LoginPage import LoginPage
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\pageObjects\LoginPage.py", line 3, in &lt;module&gt;
-    from util.Log import *
-  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\util\Log.py", line 9, in &lt;module&gt;
-    logging.config.fileConfig(logpath)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\config.py", line 79, in fileConfig
-    handlers = _install_handlers(cp, formatters)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\config.py", line 145, in _install_handlers
-    h = klass(*args, **kwargs)
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1041, in __init__
-    StreamHandler.__init__(self, self._open())
-  File "C:\Users\a\AppData\Local\Programs\Python\Python37\lib\logging\__init__.py", line 1070, in _open
-    return open(self.baseFilename, self.mode, encoding=self.encoding)
-ValueError: invalid mode: 'utf-8'
-
+  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\testScripts\testLogin.py", line 81, in test_Login
+    raise e
+  File "C:\Users\a\PycharmProjects\ZheHe_UIAutomation\testScripts\testLogin.py", line 47, in test_Login
+    homePage.LoginEntryButton().click()
+AttributeError: 'NoneType' object has no attribute 'click'
 
 
         </pre>
